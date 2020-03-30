@@ -5,9 +5,9 @@ again = "Insert your answer again: "
 
 
 print("Welcome to my text based game (DAY 2 DLC NOW AVAILABLE)")
-print("#alfa 2.0")
+print("#alfa 3.0")
 print("#-bug fixes")
-print("#-DAY 2 DLC (unfinished)")
+print("#-DAY 2 DLC is out and playable")
 print("%s" % formating)
 name = input("Insert your character name: ")
 
@@ -349,7 +349,7 @@ def game32():
     print("%s" % formating)
     print("You wake up to the police raiding your friends house. They haven't made it to the basement yet.")
     reply = input("%s (hide, run): " % wyd)
-    if reoly == "hide":
+    if reply == "hide":
         game34()
     elif reply == "run":
         game35()
@@ -405,6 +405,81 @@ def game36():
         print("%s" % again)
         game36()
 
+def game37():
+    print("%s" % formating)
+    print("You hack into your neigbours security system and find out he's working for the FBI")
+    reply = input("%s (investigate, give up): " % wyd)
+    if reply == "investigate":
+        game41()
+    elif reply == "give up":
+        game41()
+    else:
+        print("%s" % again)
+        game37()
+
+def game38():
+    print("%s" % formating)
+    print("The passage leads to a dark room that smells really gross. You dont know whats going on there and the floor is wet. You find a light switch")
+    reply = input("%s (click switch, dont click): " % wyd)
+    if reply == "click switch":
+        game44()
+    elif reply == "dont click":
+        game45()
+    else:
+        print("%s" % again)
+        game38()
+
+def game39():
+    print("%s" % formating)
+    print("The police finds you really fast. its embarrassing. You piss yourself. The polise shoots you on the spot cos your such a loser. GO FUCK URSELF")
+    youlose()
+
+def game40():
+    print("%s" % formating)
+    print("You try to run but you're a fat cunt and the police catches up to you in 10 seconds.")
+    youlose()
+
+def game41():
+    print("%s" % formating)
+    print("The police is now raiding your friends house")
+    reply = input("%s (give up, hide): " % wyd)
+    if reply == "give up":
+        game25()
+    elif reply == "hide":
+        game34()
+    else:
+        print("%s" % again)
+        game41()
+
+def game44():
+    print("%s" % formating)
+    print("The lights come on. The floor is full of blood and you see a girl tied to a table with a camera pointed at her. You pass out")
+    reply = input("%s (quit game, day 3): ")
+    if reply == "quit game":
+        youlose()
+    elif reply == "day 3":
+        print("Day 3 is not available at this moment!")
+    else:
+        print("%s" % again)
+        game44()
+
+def game45():
+    print("%s" % formating)
+    print("You dont know where you are and cant see a thing. you get disorianted and fall down somewhere and get knocked out.")
+    reply = input("%s (quit game, day 3): ")
+    if reply == "quit game":
+        youlose()
+    elif reply == "day 3":
+        print("Day 3 is not available at this moment!")
+    else:
+        print("%s" % again)
+        game45()
+
+
+
+
+
+
 
 
     
@@ -417,5 +492,5 @@ def game36():
 game()
 
 
-#alfa release 2.0
+#alfa release 3.0
 #Copyright Kevin Piip
