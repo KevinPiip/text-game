@@ -5,9 +5,8 @@ again = "Insert your answer again: "
 
 
 print("Welcome to my text based game")
-print("#alfa 5.0")
+print("#alfa 5.1")
 print("#-minor big fixes")
-print("#-DAY 2 DLC is out and playable")
 print("#-checkpoint added on day 2")
 print("#-New formating")
 print("%s" % formating)
@@ -292,7 +291,7 @@ def game19():
     print("Your co-worker tells you that the police is looking for you")
     print("[1] Run away")
     print("[2] Don't give a fuck about it and go to work")
-    reply = input("%s: ")
+    reply = input("%s: " % wyd)
     if reply == "1":
         game26()
     elif reply == "2":
@@ -552,7 +551,7 @@ def game45():
     print("You dont know where you are and cant see a thing. you get disorianted and fall down somewhere and get knocked out.")
     print("[1] Quit game (the game wont be saved)")
     print("[2] Day 3 (not out yet)")
-    reply = input("%s: ")
+    reply = input("%s: " % wyd)
     if reply == "1":
         quit()
     elif reply == "2":
