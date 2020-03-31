@@ -7,3 +7,6 @@ ALFA 6.3 NOW OUT
 #Minor bug fixes
 #Quit game anywhere
 #Delay added
+
+ALFA 7.0
+#New ASCII menu system
