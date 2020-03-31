@@ -6,63 +6,173 @@ again = "Insert your answer again: "
 
 #===========================================================================================================================================
 
-def relnotes():
-    print("%s" % formating)
-    print("#alfa 6.3")
-    print("#-New menu system")
-    print("#-Tutorial")
-    print("#-Time delays added")
-    print("#-Quit confirmation added")
-    print("#-Quit game anywhere")
-    print("#-Delay added")
-    print("[1] Back to menu")
-    reply = input(": ")
-    if reply == "1":
-        menu()
-    else:
-        print("%s" % again)
-        relnotes()
-
-#===========================================================================================================================================
-
-def menu():
-    print("%s" % formating)
-    print("WELCOME")
-    time.sleep(1)
-    print("[1] Tutorial")
-    print("[2] New game")
-    print("[3] Quit game")
-    print("[4] Release notes")
-    #print("[5] Continue")
-    reply = input(": ")
-    if reply == "1":
+def menu1():
+    print("===============================================================")
+    print("|   use W to go up, S to go down, D to select, A to go back   |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|             > [1] ________________ Tutorial                 |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|               [2] ________________ New Game                 |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|               [3] ________________ Quit game                |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|               [4] ________________ Release notes            |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("===============================================================")
+    wasd = input()
+    if wasd == "s":
+        menu2()
+    elif wasd == "w":
+        menu4()
+    elif wasd == "d":
         tutorial()
-    elif reply == "2":
+    else:
+        menu1()
+
+
+def menu2():
+    print("===============================================================")
+    print("|   use W to go up, S to go down, D to select, A to go back   |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|               [1] ________________ Tutorial                 |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|             > [2] ________________ New Game                 |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|               [3] ________________ Quit game                |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|               [4] ________________ Release notes            |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("===============================================================")
+    wasd = input()
+    if wasd == "w":
+        menu1()
+    elif wasd == "s":
+        menu3()
+    elif wasd == "d":
         game()
-    elif reply == "3":
-        rusure7()
-    elif reply == "4":
+    else:
+        menu2()
+
+
+def menu3():
+    print("===============================================================")
+    print("|   use W to go up, S to go down, D to select, A to go back   |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|               [1] ________________ Tutorial                 |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|               [2] ________________ New Game                 |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|             > [3] ________________ Quit game                |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|               [4] ________________ Release notes            |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("===============================================================")
+    wasd = input()
+    if wasd == "w":
+        menu2()
+    elif wasd == "s":
+        menu4()
+    elif wasd == "d":
+        quit()
+    else:
+        menu3()
+
+def menu4():
+    print("===============================================================")
+    print("|   use W to go up, S to go down, D to select, A to go back   |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|               [1] ________________ Tutorial                 |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|               [2] ________________ New Game                 |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|               [3] ________________ Quit game                |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("|             > [4] ________________ Release notes            |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("===============================================================")
+    wasd = input()
+    if wasd == "w":
+        menu3()
+    elif wasd == "s":
+        menu1()
+    elif wasd == "d":
         relnotes()
     else:
-        print("%s" % again)
-        menu()
+        quit()
+
+
+def relnotes():
+    print("===============================================================")
+    print("|   use W to go up, S to go down, D to select, A to go back   |")
+    print("|                                                             |")
+    print("|                        # ALFA 7.0                           |")
+    print("|                                                             |")
+    print("|                  #-Quit confirmation added                  |")
+    print("|                                                             |")
+    print("|                      #-New menu system                      |")
+    print("|                                                             |")
+    print("|                    #-Quit game anywhere                     |")
+    print("|                                                             |")
+    print("|                         #-Tutorial                          |")
+    print("|                                                             |")
+    print("|                     #-Time delays added                     |")
+    print("|                                                             |")
+    print("|                                                             |")
+    print("===============================================================")
+    wasd = input()
+    if wasd == "a":
+        menu4()
+    else:
+        relnotes()
+
+
+def tutorial():
+    print("===============================================================")
+    print("|   use W to go up, S to go down, D to select, A to go back   |")
+    print("|                                                             |")
+    print("|                     This is the tutorial                    |")
+    print("|              In the game you are given 2 choises            |")
+    print("|  To choose press the number in front of the text and enter  |")
+    print("|               [1] - gives you the first choise              |")
+    print("|               [2] - gives you the second choise             |")
+    print("|        You can type whenever you see 'What do you do?'      |")
+    print("|  If you accidentally type something else you will see this  |")
+    print("|               text 'Insert your answer again: '             |")
+    print("|              You can then type your answer again            |")
+    print("|                  Each day is a checkpoint                   |")
+    print("|   you can fast quit the game whenever you want by typing    |")
+    print("|                         'quit game'                         |")
+    print("|   it doesnt ask for confirmation and all progress is lost   |")
+    print("===============================================================")
+    wasd = input()
+    if wasd == "a":
+        menu1()
+    #elif wasd == "s":
+    #    tutorial2()
+    else:
+        tutorial()
 
 #===========================================================================================================================================
-
-def rusure():
-    print("%s" % formating)
-    print("Are you sure you wanna quit? progress wont be saved!")
-    time.sleep(2)
-    print("[1] Yes")
-    print("[2] No")
-    reply = input(": ")
-    if reply == "1":
-        quit()
-    elif reply == "2":
-        tutorial2()
-    else:
-        print("%s" % again)
-        rusure()
 
 def rusure2():
     print("%s" % formating)
@@ -149,59 +259,10 @@ def rusure7():
     if reply == "1":
         quit()
     elif reply == "2":
-        menu()
+        menu1()
     else:
         print("%s" % again)
         rusure7()
-
-#===========================================================================================================================================
-
-def tutorial():
-    print("%s" % formating)
-    print("This is the tutorial")
-    time.sleep(2)
-    print("in the game you are given 2 choises")
-    time.sleep(2)
-    print("to choose press the number in front of the text and enter")
-    time.sleep(2)
-    print("[1] - gives you the first choise")
-    time.sleep(2)
-    print("[2] - gives you the second choise")
-    time.sleep(2)
-    print("you can type whenever you see '%s' " % wyd)
-    time.sleep(2)
-    print("if you accidentally type something else you will see this text '%s'" % again)
-    time.sleep(2)
-    print("you can then type your answer again")
-    time.sleep(2)
-    print("lets try it here, press 1 and enter to go to the next page")
-    time.sleep(2)
-    reply = input("type your answer: ")
-    if reply == "1":
-        tutorial2()
-    else:
-        print("%s" % again)
-        reply
-
-def tutorial2():
-    print("each day is a checkpoint")
-    time.sleep(2)
-    print("if you die or get busted on day 2 you dont have to start from day 1 but you start on day 2")
-    time.sleep(2)
-    print("you can also fast quit the game whenever you want by typing 'quit game'")
-    time.sleep(2)
-    print("it doesnt ask for confirmation and all progress is lost")
-    time.sleep(2)
-    print("[1] exit tutorial")
-    print("[2] quit game")
-    reply = input(": ")
-    if reply == "1":
-        menu()
-    elif reply == "2":
-        rusure()
-    else:
-        print("%s" % again)
-        tutorial2()
 
 #===========================================================================================================================================
 
@@ -890,7 +951,7 @@ def game45():
 #===========================================================================================================================================
 
 
-menu()
+menu1()
 
 
 #alfa release 6.3
