@@ -6,10 +6,11 @@ again = "Insert your answer again: "
 
 def relnotes():
     print("%s" % formating)
-    print("#alfa 6.0")
+    print("#alfa 6.1")
     print("#-New menu system")
     print("#-Tutorial")
     print("#-Time delays added")
+    print("#-Quit confirmation added")
     print("[1] Back to menu")
     reply = input()
     if reply == "1":
@@ -747,5 +748,5 @@ def game45():
 menu()
 
 
-#alfa release 6.0
+#alfa release 6.1
 #Copyright Kevin Piip
