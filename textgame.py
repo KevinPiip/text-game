@@ -5,9 +5,10 @@ again = "Insert your answer again: "
 
 
 print("Welcome to my text based game (DAY 2 DLC NOW AVAILABLE)")
-print("#alfa 3.0")
-print("#-bug fixes")
+print("#alfa 4.0")
+print("#-minor big fixes")
 print("#-DAY 2 DLC is out and playable")
+print("#-checkpoint added on day 2")
 print("%s" % formating)
 name = input("Insert your character name: ")
 
@@ -20,6 +21,17 @@ def youlose():
         quit()
     else:
         youlose()
+
+def youlose2():
+    print("_GAME OVER_")
+    reply = input("(restart (to last checkpoint), quit game): ")
+    if reply == "restart":
+        game8()
+    elif reply == "quit game":
+        quit()
+    else:
+        youlose2()
+
 
 def game():
     print("%s" % formating)
@@ -113,7 +125,7 @@ def game7():
 
 def game8():
     print("%s" % formating)
-    print("Sleep tight!")
+    print("Sleep tight! (CHECKPOINT)")
     reply = input("%s (quit game, day 2): " % wyd)
     if reply == "quit game":
         quit()
@@ -263,27 +275,27 @@ def game20():
 def game21():
     print("%s" % formating)
     print("You start a new project but its interrupted by a bright flash and a loud bang, the police is raiding your home and arrests you")
-    youlose()
+    youlose2()
 
 def game22():
     print("%s" % formating)
     print("It's the polce, they arrest you for hacking")
-    youlose()
+    youlose2()
 
 def game23():
     print("%s" % formating)
     print("You grab your gun and investigate. It's the police, they see your gun and you are shot to death")
-    youlose()
+    youlose2()
 
 def game24():
     print("%s" % formating)
     print("It's too late, they arrest you")
-    youlose()
+    youlose2()
 
 def game25():
     print("%s" % formating)
     print("They arrest you")
-    youlose()
+    youlose2()
 
 def game26():
     print("%s" % formating)
@@ -432,12 +444,12 @@ def game38():
 def game39():
     print("%s" % formating)
     print("The police finds you really fast. its embarrassing. You piss yourself. The polise shoots you on the spot cos your such a loser. GO FUCK URSELF")
-    youlose()
+    youlose2()
 
 def game40():
     print("%s" % formating)
     print("You try to run but you're a fat cunt and the police catches up to you in 10 seconds.")
-    youlose()
+    youlose2()
 
 def game41():
     print("%s" % formating)
@@ -456,7 +468,7 @@ def game44():
     print("The lights come on. The floor is full of blood and you see a girl tied to a table with a camera pointed at her. You pass out")
     reply = input("%s (quit game, day 3): ")
     if reply == "quit game":
-        youlose()
+        quit()
     elif reply == "day 3":
         print("Day 3 is not available at this moment!")
     else:
@@ -468,7 +480,7 @@ def game45():
     print("You dont know where you are and cant see a thing. you get disorianted and fall down somewhere and get knocked out.")
     reply = input("%s (quit game, day 3): ")
     if reply == "quit game":
-        youlose()
+        quit()
     elif reply == "day 3":
         print("Day 3 is not available at this moment!")
     else:
@@ -492,5 +504,5 @@ def game45():
 game()
 
 
-#alfa release 3.0
+#alfa release 4.0
 #Copyright Kevin Piip
