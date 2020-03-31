@@ -1,16 +1,185 @@
+import time
 
 formating = "=================================================================================================================="
 wyd = "What do you do?"
 again = "Insert your answer again: "
 
+def relnotes():
+    print("%s" % formating)
+    print("#alfa 6.0")
+    print("#-New menu system")
+    print("#-Tutorial")
+    print("#-Time delays added")
+    print("[1] Back to menu")
+    reply = input()
+    if reply == "1":
+        menu()
+    else:
+        print("%s" % again)
+        relnotes()
 
-print("Welcome to my text based game")
-print("#alfa 5.1")
-print("#-minor big fixes")
-print("#-checkpoint added on day 2")
-print("#-New formating")
-print("%s" % formating)
-name = input("Insert your character name: ")
+def menu():
+    print("%s" % formating)
+    print("WELCOME")
+    print("[1] Tutorial")
+    print("[2] New game")
+    print("[3] Quit game")
+    print("[4] Release notes")
+    reply = input()
+    if reply == "1":
+        tutorial()
+    elif reply == "2":
+        game()
+    elif reply == "3":
+        rusure7()
+    elif reply == "4":
+        relnotes()
+    else:
+        print("%s" % again)
+        menu()
+
+
+def rusure():
+    print("%s" % formating)
+    print("Are you sure you wanna quit? progress wont be saved!")
+    print("[1] Yes")
+    print("[2] No")
+    reply = input()
+    if reply == "1":
+        quit()
+    elif reply == "2":
+        tutorial2()
+    else:
+        print("%s" % again)
+        rusure()
+
+def rusure2():
+    print("%s" % formating)
+    print("Are you sure you wanna quit? progress wont be saved!")
+    print("[1] Yes")
+    print("[2] No")
+    reply = input()
+    if reply == "1":
+        quit()
+    elif reply == "2":
+        youlose()
+    else:
+        print("%s" % again)
+        rusure2()
+
+def rusure3():
+    print("%s" % formating)
+    print("Are you sure you wanna quit? progress wont be saved!")
+    print("[1] Yes")
+    print("[2] No")
+    reply = input()
+    if reply == "1":
+        quit()
+    elif reply == "2":
+        youlose2()
+    else:
+        print("%s" % again)
+        rusure3()
+
+def rusure4():
+    print("%s" % formating)
+    print("Are you sure you wanna quit? progress wont be saved!")
+    print("[1] Yes")
+    print("[2] No")
+    reply = input()
+    if reply == "1":
+        quit()
+    elif reply == "2":
+        game8()
+    else:
+        print("%s" % again)
+        rusure4()
+
+def rusure5():
+    print("%s" % formating)
+    print("Are you sure you wanna quit? progress wont be saved!")
+    print("[1] Yes")
+    print("[2] No")
+    reply = input()
+    if reply == "1":
+        quit()
+    elif reply == "2":
+        game44()
+    else:
+        print("%s" % again)
+        rusure5()
+
+def rusure6():
+    print("%s" % formating)
+    print("Are you sure you wanna quit? progress wont be saved!")
+    print("[1] Yes")
+    print("[2] No")
+    reply = input()
+    if reply == "1":
+        quit()
+    elif reply == "2":
+        game45()
+    else:
+        print("%s" % again)
+        rusure6()
+
+def rusure7():
+    print("%s" % formating)
+    print("Are you sure you wanna quit?")
+    print("[1] Yes")
+    print("[2] No")
+    reply = input()
+    if reply == "1":
+        quit()
+    elif reply == "2":
+        menu()
+    else:
+        print("%s" % again)
+        rusure7()
+
+def tutorial():
+    print("%s" % formating)
+    print("This is the tutorial")
+    time.sleep(2)
+    print("in the game you are given 2 choises")
+    time.sleep(2)
+    print("to choose press the number in front of the text and enter")
+    time.sleep(2)
+    print("[1] - gives you the first choise")
+    time.sleep(2)
+    print("[2] - gives you the second choise")
+    time.sleep(2)
+    print("you can type whenever you see '%s' " % wyd)
+    time.sleep(2)
+    print("if you accidentally type something else you will see this text '%s'" % again)
+    time.sleep(2)
+    print("you can then type your answer again")
+    time.sleep(2)
+    print("lets try it here, press 1 and enter to go to the next page")
+    time.sleep(2)
+    reply = input("type your answer: ")
+    if reply == "1":
+        tutorial2()
+    else:
+        print("%s" % again)
+        reply
+
+def tutorial2():
+    print("each day is a checkpoint")
+    time.sleep(2)
+    print("if you die or get busted on day 2 you dont have to start from day 1 but you start on day 2")
+    time.sleep(2)
+    print("[1] exit tutorial")
+    print("[2] quit game")
+    reply = input()
+    if reply == "1":
+        menu()
+    elif reply == "2":
+        rusure()
+    else:
+        print("%s" % again)
+        tutorial2()
+
 
 def youlose():
     print("_GAME OVER_")
@@ -20,7 +189,7 @@ def youlose():
     if reply == "1":
         game()
     elif reply == "2":
-        quit()
+        rusure2()
     else:
         youlose()
 
@@ -32,7 +201,7 @@ def youlose2():
     if reply == "1":
         game8()
     elif reply == "2":
-        quit()
+        rusure3()
     else:
         youlose2()
 
@@ -148,7 +317,7 @@ def game8():
     print("[2] Continue to day 2")
     reply = input("%s: " % wyd)
     if reply == "1":
-        quit()
+        rusure4()
     elif reply == "2":
         game9()
     else:
@@ -538,7 +707,7 @@ def game44():
     print("[2] Day 3 (not out yet)")
     reply = input("%s: ")
     if reply == "1":
-        quit()
+        rusure5()
     elif reply == "2":
         print("Day 3 is not available at this moment!")
         game44()
@@ -553,7 +722,7 @@ def game45():
     print("[2] Day 3 (not out yet)")
     reply = input("%s: " % wyd)
     if reply == "1":
-        quit()
+        rusure6()
     elif reply == "2":
         print("Day 3 is not available at this moment!")
         game45()
@@ -575,8 +744,8 @@ def game45():
 
 
 
-game()
+menu()
 
 
-#alfa release 4.0
+#alfa release 6.0
 #Copyright Kevin Piip
