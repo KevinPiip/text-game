@@ -1,8 +1,9 @@
 # text-game
 my simple text based game using python 3
 
-ALFA 6.1 NOW OUT
-#NEW MENU SYSTEM
-#TUTORIAL
-#TIME DELAYS BEING ADDED
-#MINOR BUG FIXES
+ALFA 6.3 NOW OUT
+#Menu added
+#Tutorial
+#Minor bug fixes
+#Quit game anywhere
+#Delay added
